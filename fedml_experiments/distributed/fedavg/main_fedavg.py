@@ -104,7 +104,7 @@ def add_args(parser):
     parser.add_argument('--gpu_num_per_server', type=int, default=4,
                         help='gpu_num_per_server')
 
-    parser.add_argument('--gpu_mapping_file', type=str, default="gpu_mapping.yaml",
+    parser.add_argument('--gpu_mapping_file', type=str, default=None,
                         help='the gpu utilization file for servers and clients. If there is no \
                         gpu_util_file, gpu will not be used.')
 
